@@ -8,8 +8,9 @@ This repository contains code for a Part-of-Speech (POS) tagger implemented usin
 * ffnn.py: Defines the FFNN model architecture (FFNN class).
 * rnn.py: Defines the RNN model architecture
 
-  ## Model Architecture
-  ### FFNN
+## Model Architecture
+
+### FFNN
   * The  consists of an embedding layer followed by two fully connected layers (fc1 and fc2). The size of the input to fc1 is determined by the concatenation of embeddings of p + s context words, where 'p' denotes preceding context and 's' denotes succeeding context.
 
  ### RNN
@@ -22,5 +23,6 @@ The Universal Dependencies dataset is a collection of syntactically annotated co
 
 ## Execution
 FFNN -> python3 pos_tagger.py -f 
+
 LSTM -> python3 pos_tagger.py -r
 
